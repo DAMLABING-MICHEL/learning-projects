@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>frmulaire et dynamisme javascript</title>
+	<script src="modifyformscript/script.js"></script>
+	<style>
+		span{
+			font-size: 40px;
+		}
+	</style>	
+</head>
+<body>
+		<p>
+		<label for="prenom">prenom:</label>
+		<input type="text"  placeholder="entrez votre prenom"  id="prenom"  onkeyup="prenom_manquant.innerHTML=this.value" required/> 
+		<span id="prenom_manquant"></span>
+		</p>
+        <input type="submit" value="envoyer"   id="bouton_envoi" >
+        <script>
+   
+        </script>
+</body>
+</html>
+<!--  
+    <script>
+var i = 0;
+    var terms = [];
+    while(i < equation.length) {
+        var pos = getSiweindex()
+    }
+
+    var num = getSiweindex(equation, 1)
+    alert(num);
+    
+
+})
+
+function getSiweindex(equation, start) {
+    for (let i = start; i < equation.length; i++) {
+        if(equation[i] == '+' || equation[i] == '-'){
+            return i;
+        }
+    }
+
+
+
+
+
+		var validation = document.getElementById('bouton_envoi');
+var surnom = document.getElementById('prenom');
+var prenom_m = document.getElementById('prenom_manquant');
+validation.addEventListener('click', envoi);
+function envoi(e){
+if (surnom.validity.valueMissing) {
+	e.preventDefault();
+	prenom_m.textContent = "prenom manquant";
+	prenom_m.style.color ="red"; 
+}
+}
+	</script>
+-->
+<!--var prenom_v = surnom.length;
+//surnom.addEventListener('keyup', envoi);
+function envoi(e){
+if (surnom == "") {
+    prenom_m.textContent = " prenom manquant";
+    //prenom_m.innerHTML(surnom.value);
+    //e.preventDefault();		
+    /*prenom_m.textContent = "prenom manquant";
+    prenom_m.style.color ="red"; 
+}else if (prenom_v.test( surnom.value) == false){
+    event.preventDefault();
+    prenom_m.textContent = "format incorrect";
+    prenom_m.style.color = "orange";
+}else{
+    
+}*/
+}-->

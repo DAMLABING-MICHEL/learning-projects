@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    padding: 30px;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 6%;
+    /*background-color:#e46876;*/
+    background-color: red;
+    align-items: center;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+h4{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    height: 0%;
+    justify-content: center;
+}
+h3{
+    color: white;
+}
+h4 a{
+    color: black;
+}
+#form-search{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border: 1px solid  rgb(211, 193, 201);
+    border-radius: 5px;
+}
+#img{
+    display: flex;
+    width: 100%;
+    height: 35%;
+}
+#red-item{
+    background-color: red;
+}
+#search{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    font-size: 20px;
+}
+#valider{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#valider:hover{
+    cursor: pointer;
+}
+#action,#titre{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+#action{
+    background-color: rgb(70, 67, 67);
+    opacity: 0,1;
+    
+}
+#msg-suppression{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#valid,#retour{
+    font-size: 20px;
+}
+#valid:hover{
+    cursor: pointer;
+}
+#retour a{
+    color: black;
+}
+/*#titre{
+    background-color: red;
+}*/
+ a{
+    color: white;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    border: 1px solid;
+    /*padding: 10px;*/
+    background-color: rgb(122, 118, 118);
+   /* background-color: rgb(75, 72, 72);*/
+    opacity: 0.8;
+    align-items: justify;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    overflow-y:auto;
+}
+.lien{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    /*background-color: aqua;*/
+    align-items: center;
+   
+}
+.div-bar{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    /*background-color: rgb(211, 193, 201);*/
+    justify-content: center;
+}
+.lien-header{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.items{
+    display: flex;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(122, 137, 141);
+    /*border: 1px solid ;*/
+    flex-flow: column;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.item1,.item2,.more-infos{
+    display: flex;
+    /*border: 1px solid;*/
+}
+.item1{
+    width: 100%;
+    height: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.item2{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    flex-flow: column;
+    align-items: center;
+}
+.prix{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    text-transform: uppercase;
+    color: red;
+}
+.titre-produit{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.more-infos{
+    width: 80%;
+    height: 15%;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    opacity: 0.6;
+}
+.more{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.more-infos a{
+    color: white;
+}
+.supprimer{
+    font-size: 20px;
+    color: blue;
+}
+.describ{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.ajout{
+    display: flex;
+    width: 1000px;
+    height: 800;
+    margin: auto;
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(75, 72, 72);
+    opacity: 0.7;
+    align-items: justify;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.describ i{
+    margin-right: 10px;
+    color: red;
+}

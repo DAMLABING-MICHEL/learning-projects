@@ -1,0 +1,33 @@
+h1{
+	text-transform:uppercase;
+	margin-top:30px;
+	text-align:center;
+}
+div{
+	border-style:dashed;
+	border-width:3px;
+	width:600px;
+	margin-left:50px;
+	margin-right:50px;
+	padding:5px;
+	border-color:red;
+	font-family:times new roman;
+	text-indent:10px;
+}
+.only{
+	margin-top:10px;
+	text-align:center;
+}
+.space{
+	margin-top:10px;
+}
+.first{
+	border-style:none;
+}
+.third{
+	background-color:gray;
+	margin-top:10px;
+}
+.four{
+	margin-top:10px;
+}

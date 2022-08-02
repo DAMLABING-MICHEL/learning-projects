@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>frmulaire et dynamisme javascript</title>
+	<script src="modifyformscript/script.js"></script>
+	<style>
+		span{
+			font-size: 40px;
+		}
+	</style>	
+</head>
+<body>
+		<p>
+		<label for="prenom">prenom:</label>
+		<input type="text"  placeholder="entrez votre prenom"  id="prenom" required/> 
+		<span id="prenom_manquant"></span>
+		</p>
+        <input type="submit" value="envoyer"   id="bouton_envoi">
+        <script>
+   
+        </script>
+</body>
+</html>
+<!--  
+    <script>
+		var validation = document.getElementById('bouton_envoi');
+var surnom = document.getElementById('prenom');
+var prenom_m = document.getElementById('prenom_manquant');
+validation.addEventListener('click', envoi);
+function envoi(e){
+if (surnom.validity.valueMissing) {
+	e.preventDefault();
+	prenom_m.textContent = "prenom manquant";
+	prenom_m.style.color ="red"; 
+}
+}
+	</script>
+-->

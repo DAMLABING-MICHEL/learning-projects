@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="utf-8">
+    <head>
+        <title>utiliser les flexbox</title>
+        <link rel="stylesheet" href="cssform/newcssform1.css">
+        <script type="text/javascript" src="scriptform/scriptform1.js"></script>
+    </head>
+    <body>
+        <!--conteneur-->
+        <div class="container">
+            <!--en-tete du formulaire,conteneur 1-->
+            <div class="content1"><h1>enregistrement d'un utilisateur</h1></div>
+            <!--conteneur2,conteneur 3 flex1,flex2-->
+             <div class="content2">
+                <div class="content3">
+                    <!--<div class="flex1"></div>-->
+                    <form id="idform">
+                        <div class="form">
+                            <div class="label">
+                                <div class="label2"></div>
+                                <div class="label3">
+                               <div class="size"><label for="name">nom:</label></div> 
+                               <div class="size"><label for="prenom">prenom:</label></div> 
+                                <div class="size"><label for="age">age:</label></div> 
+                                <div class="size"><label for="sexe">sexe:</label></div> 
+                                <div class="size"><label for="mail">e-mail:</label></div> 
+                                <div class="size"><label>sport préféféré:</label></div> 
+                                </div>
+                            </div>
+                            <!--conteneur input-->
+                            <div class="input">
+                               <div class="input1">
+                                <div>
+                                    <input type="text" name="name"  placeholder="entrez votre nom"
+                                     id="idnom" class="size1"  onkeyup="inputname.innerHTML=this.value"/>
+                                     <span id="errorname" class="error1"></span> 
+                                </div>   
+                                    <div><input type="text" name="surname" placeholder="entrez votre prenom"
+                                        id="idprenom" class="size2" onkeyup="inputsurname.innerHTML=this.value"/>
+                                    </div> 
+                                    <span id="errorsurname" class="error2"></span>
+                                     <div> <input type="number" name="age" placeholder="choisissez votre age" id="idage"  class="size3"
+                                         onchange ="inputage.innerHTML=this.value"/></div> 
+                                        <div class="radio">
+                                         <input type="radio" value="masculin" name="sexe"  id="masculin"  class="rdio"
+                                        onchange="inputsexe.innerHTML=this.value"/><span class= "mas">masculin</span>
+                                        <input type="radio" value="feminin"  name="sexe" id="feminin" class="rdio"
+                                        onchange="inputsexe.innerHTML=this.value"/><span class="fem">feminin</span>
+                                        </div>
+        
+                                        <div><input type="email" name="mail"  placeholder="entrez votre adresse e-mail" id="idmail"  class="size4"
+                                    onkeyup="inputmail.innerHTML=this.value"/></div> 
+                                    <div><select  name="favourite"  class="size5" id="idchoix" onchange="inputoption.innerHTML=this.value">
+                                     <option label="sélectionnez votre sport préféféré ">   
+                                    <option> le football</option>
+                                    <option> l'athlétisme</option>
+                                    <option> la gymnastique</option>
+                                    <option> le rugby</option>
+                                    <option>le volleyball</option>
+                                    </select></div> 
+                               </div>
+                               <!--<div class="input2"></div>-->
+                            </div>
+                            </div>
+                            <div class="flex2">
+                               <div class="div1"></div>
+                               <div class="div2">
+                                   <div class="div4">
+                                    <div class="div6"><input type="submit" value="envoyer" class="submit" id="envoie" onclick = "soumettre ()"></div>
+                                    <div class="div7"></div>
+                                    <div class="div8"><input type="reset" value="annuler" class="reset" onclick="annuler ()"></div>
+                                   </div>
+                                   <div class="div5"></div>
+                               </div>
+                               <div class="div3"></div>
+                            </div>
+                    </form>
+                   
+                </div>
+                <div class="content4">
+                   <!--<div class="flex1"></div>-->
+                   <div class="form">
+                       <div class="labell">
+                        <div class="labell2"></div>
+                        <div class="labell3">
+                            <div class="sizee"><label for="name">nom:</label><span id="inputname"></span>   
+                            </div>
+                            <div class="sizee"><label for="prenom">prenom:</label> <span id="inputsurname"></span>
+                            </div>
+                            <div class="sizee"><label for="age">age:</label> <span id="inputage"></span>
+                                <span id="errorage" class="error3"></span>
+                            </div>
+                            <div class="sizee"><label for="sexe">sexe:</label> <span id="inputsexe"></span>
+                                <span id="errorsexe" class=""></span>
+                            </div>
+                            <div class="sizee"><label for="e-mail">e-mail:</label><span id="inputmail"></span>
+                                <span id="errormail" class="error4"></span>
+                            </div>
+                            <div class="sizee"><label for="choix">sport préféféré:<span id="inputoption"></span>
+                                <span id="errorchoix" class="error5"></span>
+                            </div>
+                            </div>
+                       </div>
+                       <div class="inputt"></div>
+                   </div>
+                   <div class="flex4"></div>
+                </div>
+             </div>
+        </div>     
+    </body>
+</html>

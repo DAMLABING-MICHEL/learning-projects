@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>mon nouveau formulaire copié</title>
+        <link rel="stylesheet" type="text/css" href="cssform/form.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="content1">
+                enregistrement d'un utilisateur
+            </div>
+            <div class="content2">
+                <div class="content3">
+                    <form>
+                        <div class="item1"></div>
+                        <div class="item2">
+                            <div class="div1">
+                                <div class="label"><label for="name">nom:</label></div>
+                                 <input type="text" id="nom" placeholder="entrer votre nom" required>
+                             </div>
+                             <div class="div2" id="errorname"></div>
+                             <!--<div class="div2" id="errorname2"></div>-->
+                             <div class="div3">
+                                 <div class="label"><label for="surname">prenom:</label></div>
+                                 <input type="text" id="prenom" placeholder="entrer votre prenom" name="inputt" required>
+                             </div>
+                             <div class="div4" id="errorsurname"></div>
+                             <div class="div5">
+                                 <div class="label"><label for="age">age:</label></div>
+                                  <input type="number" id="age" placeholder="entrer votre age" name="inputt" required>
+                             </div>
+                             <div class="div6" id="errorage"></div>
+                             <div class="div7">
+                                 <div class="label"><label for="sexe">sexe:</label></div>
+                                 <div class="sexe1">
+                                    <input type="radio" id="sexem" value="masculin" name="sexe" required>masculin
+                                 </div>
+                                 <span id="errorsexem"></span>
+                                 <div class="sexe2">
+                                    <input type="radio" id="sexef" value="feminin" name="sexe" required>feminin
+                                 </div>
+                                 <span id="errorsexef"></span>
+                             </div>
+                             <div class="div8" id="errorsexe"></div>
+                             <div class="div9">
+                                 <div class="label"><label for="email">email:</label></div>
+                                 <input type="email" id="email" placeholder="entrer votre adresse email" name="inputt" required>
+                             </div>
+                             <div class="div10" id="errormail"></div>
+                             <div class="div11">
+                                 <div class="label"><label for="choice">sport préféré:</label></div>
+                                 <select id="choix" onchange="idchoix.innerHTML=this.value">
+                                     <option></option>
+                                     <option>football</option>
+                                     <option>handball</option>
+                                     <option>gymnastique</option>
+                                 </select>
+                             </div>
+                             <div class="div12" id="errorchoix"></div>
+                             <div class="div13">
+                                 <input type="submit" value="envoyer" id="envoi">
+                                 <input type="reset" value="annuler" id="reset">
+                             </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="content4">
+                    <form>
+                        <div class="item1"></div>
+                        <div class="item2">
+                            <div class="div1">
+                                <div class="labell"><label for="name">nom:</label></div>
+                                <span id="idnom" name="texte"></span>
+                            </div>
+                             <div class="div2"></div>
+                             <div class="div3">
+                                <div class="labell"><label for="surname">prenom:</label></div>
+                                <span id="idprenom" name="texte"></span>
+                             </div>
+                             <div class="div4"></div>
+                             <div class="div5">
+                                <div class="labell"><label for="age">age:</label></div>
+                                <span id="idage" name="texte"></span>
+                             </div>
+                             <div class="div6"></div>
+                             <div class="div7">
+                                <div class="labell"><label for="sexe">sexe:</label></div>
+                                <span id="idsexem" name="texte"></span>
+                                <span id="idsexef" name="texte"></span>
+                             </div>
+                             <div class="div8"></div>
+                             <div class="div9">
+                                <div class="labell"><label for="email">email:</label></div>
+                                <span id="idmail" name="texte"></span>
+                             </div>
+                             <div class="div10"></div>
+                             <div class="div11">
+                                <div class="labell"><label for="choice">choix:</label></div>
+                                <span id="idchoix" name="texte"></span>
+                             </div>
+                             <div class="div12"></div>
+                             <div class="div13"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="modifyformscript/script.js"></script>
+    </body>
+</html>
